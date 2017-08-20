@@ -36,10 +36,12 @@ function createTemplate(data){
             <link href ="/ui/style.css" rel="stylesheet" />
             </head>
             <body>
+            <div class= "container">
             ${datef}
             <p>
             ${content}
             </p>
+            </div>
             </body>
             </html>`;
     return htmlTemplate;        
