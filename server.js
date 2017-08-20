@@ -22,7 +22,7 @@ var articlecontent2 = {
 }
 
 function createTemplate(data){
-    var tiltle = data.title;
+    var title = data.title;
     var datef = data.datef;
     var content = data.content;
         var htmlTemplate =
