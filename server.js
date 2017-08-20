@@ -32,7 +32,6 @@ function createTemplate(data){
               <title>
                     ${title}
                 </title>
-            <meta name = "viewport" content="width-device" initial-scale=1 />
             <link href ="/ui/style.css" rel="stylesheet" />
             </head>
             <body>
