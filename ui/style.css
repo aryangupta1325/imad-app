@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+   
+    
 }
 
 .center {
@@ -20,8 +20,9 @@ body {
     height: 200px;
 }
 
-.container{
+.container {
     padding-top:60px;
     padding-left:20px;
+     background-color: red;
     padding-right:20px;
 }
