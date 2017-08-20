@@ -6,14 +6,14 @@ var app = express();
 app.use(morgan('combined'));
 
 var articleName = {
-'article-one' : {
+    articleone: {
     title: 'article-one',
     datef: '20-Sep-2017',
     content: `test
     test3
     test5`
 },
-'article-two' : {
+articletwo : {
     title: 'article-two',
     datef: '25-march-2017',
     content: `Kritis Birthday
