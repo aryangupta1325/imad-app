@@ -23,7 +23,7 @@ articletwo : {
 }
 
 function createTemplate(data){
-    var title1 = data.title;
+    var title1 = data.title1;
     var datef = data.datef;
     var content = data.content;
         var htmlTemplate =
