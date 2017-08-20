@@ -7,14 +7,14 @@ app.use(morgan('combined'));
 
 var articles = {
     articleone: {
-    title: 'article-one',
+    title1: 'article-one',
     datef: '20-Sep-2017',
     content: `test
     test3
     test5`
 },
 articletwo : {
-    title: 'article-two',
+    title1: 'article-two',
     datef: '25-march-2017',
     content: `Kritis Birthday
     test3
@@ -30,7 +30,7 @@ function createTemplate(data){
         `   <html>
             <head>
               <title>
-                    ${title}
+                    ${title1}
                 </title>
             <link href ="/ui/style.css" rel="stylesheet" />
             </head>
