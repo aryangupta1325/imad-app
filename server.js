@@ -11,7 +11,9 @@ var articlecontent1 = {
     content: `test
     test3
     test5`
-};
+}
+
+  
 
 var articlecontent2 = {
     title: 'article-two',
@@ -26,8 +28,7 @@ function createTemplate(data){
     var datef = data.datef;
     var content = data.content;
         var htmlTemplate =
-        `
-            <html>
+        `   <html>
             <head>
             <title>
             ${title};
@@ -52,8 +53,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articlecontent1));
+app.get('/:articleName', function (req, res) {
+    var articleName = req.params.articleName;
+  res.send(createTemplate(articleName));
 });
 
 app.get('/article-two', function (req, res) {
