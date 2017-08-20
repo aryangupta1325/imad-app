@@ -5,22 +5,21 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articlecontent1 = {
+var articleName = {
+'article-one' : {
     title: 'article-one',
     datef: '20-Sep-2017',
     content: `test
     test3
     test5`
-}
-
-  
-
-var articlecontent2 = {
+},
+'article-two' : {
     title: 'article-two',
     datef: '25-march-2017',
     content: `Kritis Birthday
     test3
     test5`
+}
 }
 
 function createTemplate(data){
@@ -30,9 +29,9 @@ function createTemplate(data){
         var htmlTemplate =
         `   <html>
             <head>
-            <title>
-            ${title};
-            </title>
+              <title>
+                    ${title}
+                </title>
             <meta name = "viewport" content="width-device-width" initial-scale=1 />
             <link href ="/ui/style.css" rel="stylesheet" />
             </head>
