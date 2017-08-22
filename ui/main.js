@@ -26,7 +26,7 @@ var ct1 = document.getElementById("ct1");
          }
      }
         
-   request.open('GET','http://aryangupta1325.imad.hasura-app.io/counter',true);
+   request.open('GET','http://aryangupta1325.imad.hasura-app.io',true);
    request.send(null);
 
 }
