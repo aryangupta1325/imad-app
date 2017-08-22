@@ -13,7 +13,8 @@ img.onclick = function(){
 }
 var counter = 0;
 var ct1 = document.getElementById("ct1");
-ct1.onclick = function(){
+    ct1.onclick = function(){
     counter = counter =1 ;
+    ct1.innerHTML= counter.toString();
 
 }
