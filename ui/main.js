@@ -14,8 +14,18 @@ img.onclick = function(){
 var counter = 0;
 var ct1 = document.getElementById("ct1");
     ct1.onclick = function(){
-    var count = document.getElementById("count")  ;  
-    counter = counter+ 1 ;
-    count.innerHTML= counter.toString();
+     request = new XMLHttpRequest(); 
+     request.onreadystatechange = function(){
+         if (request.ReadyState ==  XMLHttpRequest.DONE) {
+            if (request.status == 200){
+                var counter = request.responseText;
+                 var count = document.getElementById("count")  ;  
+                  count.innerHTML= counter.toString();
+            } 
+         }
+     }
+        
+   request.open('GET','http://aryangupta1325.imad.hasura-app.io/counter',true);
+   request.send(null);
 
 }
