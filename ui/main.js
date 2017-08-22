@@ -15,7 +15,7 @@ var counter = 0;
 var ct1 = document.getElementById("ct1");
     ct1.onclick = function(){
     var count = document.getElementById("count")  ;  
-    counter = counter =1 ;
+    counter = counter+ 1 ;
     count.innerHTML= counter.toString();
 
 }
