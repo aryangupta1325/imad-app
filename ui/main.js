@@ -14,7 +14,8 @@ img.onclick = function(){
 var counter = 0;
 var ct1 = document.getElementById("ct1");
     ct1.onclick = function(){
+    var count = document.getElementById("count")  ;  
     counter = counter =1 ;
-    ct1.innerHTML= counter.toString();
+    count.innerHTML= counter.toString();
 
 }
