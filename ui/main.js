@@ -19,14 +19,13 @@ var ct1 = document.getElementById("ct1");
          if (request.ReadyState ==  XMLHttpRequest.DONE) {
             if (request.status == 200){
                 var counter = request.responseText;
-                counter = counter+1;
-                 var count = document.getElementById("count")  ;  
+                var count = document.getElementById("count")  ;  
                   count.innerHTML= counter.toString();
             } 
          }
      }
         
-   request.open('GET','http://aryangupta1325.imad.hasura-app.io',true);
+   request.open('GET','http://aryangupta1325.imad.hasura-app.io/counter',true);
    request.send(null);
 
 }
