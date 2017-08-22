@@ -13,14 +13,15 @@ img.onclick = function(){
 }
 // var counter = 0;
 var ct1 = document.getElementById("ct1");
+var count = document.getElementById("count")  ; 
     ct1.onclick = function(){
      request = new XMLHttpRequest(); 
      request.onreadystatechange = function(){
          if (request.ReadyState ==  XMLHttpRequest.DONE) {
             if (request.status == 200){
                 var counter = request.responseText;
-                var count = document.getElementById("count")  ;  
-                  count.innerHTML= counter.toString();
+                console.log(counter);
+                count.innerHTML= counter.toString();
             } 
          }
      }
